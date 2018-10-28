@@ -1,0 +1,10 @@
+body {
+    background-image: url("../images/background.jpg");
+  }
+
+  .list ul li  {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right:8%;
+    margin-top: 10px;
+    margin-bottom:10px;  

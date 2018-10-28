@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>JavaScript  Trivia Content!</title>
+  
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
+
+</head>
+
+<body>
+
+  <!-- Start of container -->
+  <div class="container">
+     
+    <div class="card">
+            <div class="card-header">
+              <h1>Totally Trivial Trivia!</h1>
+            </div>
+            <div class="card-body"><div>
+                <div id="wrapper">
+
+                    
+              
+                    <!-- Div containing the countdown timer -->
+                    <div class="row begin-countdown">
+                        <div class="col-md-12 text-center">
+                          <p> Time Remaining: <span id="timer">30 </span> Seconds</p>
+                        </div>
+                      </div>
+
+                <div class="container col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 bg-primary ">
+                  <div class="row list">
+                   <!--<span class="label-new">-->
+                          <ul class="ngc">
+                              <li class="col-xs-2 borders">
+                                  <input class="any" id="any" name="any" type="checkbox"> 
+                                  <label id="any" for="any">Any</label>
+                              </li>
+                              <li class="col-xs-2 borders new-select">
+                                  <input id="item1" name="item1" type="checkbox">
+                                  <label id="item1" for="item1">item1</label>
+                              </li>
+                              <li class="col-xs-2 borders new-select">
+                                  <input id="item2" name="item2" type="checkbox">
+                                  <label id="item2" for="item2">item2</label>
+                              </li>
+                              <li class="col-xs-2 borders new-select">
+                                  <input id="item3" name="item3" type="checkbox">
+                                  <label id="item3" for="item3">item3</label>
+                              </li>
+                          </ul>
+                    <!--</span>-->
+                  </div>
+                </div> 
+              </div>
+          </div>
+  
+  <div>
+    <div class="container col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 bg-primary ">
+      <div class="row list">
+       <!--<span class="label-new">-->
+              <ul class="ngc">
+                  <li class="col-xs-2 borders">
+                      <input class="any" id="any" name="any" type="checkbox"> 
+                      <label id="any" for="any">Any</label>
+                  </li>
+                  <li class="col-xs-2 borders new-select">
+                      <input id="item1" name="item1" type="checkbox">
+                      <label id="item1" for="item1">item1</label>
+                  </li>
+                  <li class="col-xs-2 borders new-select">
+                      <input id="item2" name="item2" type="checkbox">
+                      <label id="item2" for="item2">item2</label>
+                  </li>
+                  <li class="col-xs-2 borders new-select">
+                      <input id="item3" name="item3" type="checkbox">
+                      <label id="item3" for="item3">item3</label>
+                  </li>
+              </ul>
+       <!--</span>-->
+      </div>
+      
+  </div>
+
+  <!-- Here we create a generic div called "drink-options" -->
+  <div id="drink-options"></div>
+
+  
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+</html>
