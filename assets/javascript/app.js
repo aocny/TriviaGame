@@ -1,40 +1,40 @@
 $(document).ready(function () {
 
-    // var score;
-    // score = 0;
-    // alert("Welcome to the Movie Quiz!")
-    // var q1 = prompt("trivia")
-    // if (q1 === correctAnswer) {
-    //     score++
-    // }
+//     // var score;
+//     // score = 0;
+//     // alert("Welcome to the Movie Quiz!")
+//     // var q1 = prompt("trivia")
+//     // if (q1 === correctAnswer) {
+//     //     score++
+//     // }
 
-    for(var i=0; i<trivia.length; i++){
-        var response = window.prompt (trivia[i].prompt);
-        if (response === trivia [i].correctAnswer){
-            score++;
-            alert ("Correct!");
-        }else{
-            alert ("Incorrect!");
-        }
+//     for(var i=0; i<trivia.length; i++){
+//         var response = window.prompt (trivia[i].prompt);
+//         if (response === trivia [i].correctAnswer){
+//             score++;
+//             alert ("Correct!");
+//         }else{
+//             alert ("Incorrect!");
+//         }
 
-    }
+//     }
 
-    alert("you got" + score)
+//     alert("you got" + score)
 
-    //Timer 
-    var countDown = 30;
-    var countdownTimer = setInterval(() => {
-      timeleft--;
+//     //Timer 
+//     var countDown = 30;
+//     var countdownTimer = setInterval(() => {
+//       timeleft--;
 
     
-      document.getElementById('timer').textContent = timeleft;
+//       document.getElementById('timer').textContent = timeleft;
 
-      if (timeleft <= 0) {
-        clearInterval(countdownTimer);
-        resolve(true);
-      }
-    }, 1000);
-  });
+//       if (timeleft <= 0) {
+//         clearInterval(countdownTimer);
+//         resolve(true);
+//       }
+//     }, 1000);
+//   });
 
 
 // An array of quiz questions
@@ -100,10 +100,16 @@ var trivia = [
       },
       correctAnswer: 'a'
     }
-  ];
-    
+  ]
+    for(var i = 0; i<trivia.length; i++){
+        var myDiv = $("<div>");
+        myDiv.text(trivia[i].question);
+        $("#quiz-area").append(myDiv);
+    }
 
-
+  
+    // How to target the user's answers (checked radio buttons)
+    // $("input[type='radio']:checked").val()
     // // This line of JavaScript "grabs" the main div on the page ("#drink-options");
     // var drinkDiv = document.getElementById("drink-options");
 
@@ -120,4 +126,4 @@ var trivia = [
 
     //   // We then add the paragraph to the our main div on the page ("#drink-options")
     //   drinkDiv.appendChild(newDrinkP);
-    // });
+    
